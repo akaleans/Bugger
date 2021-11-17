@@ -1,0 +1,19 @@
+.myProjects{
+    flex: 4;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.75); 
+    box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.75);
+    padding: 20px;
+    z-index: 990;
+    color: rgb(233, 233, 233);
+    font-weight: 600;
+    font-size: 26px;
+    background-color: #ffa81c;
+    border-radius: 5px;
+}
+
+.myProjectsTitleDescription{
+    font-weight: 300;
+    font-size: 22px;
+    padding-top: 5px;
+    padding-left: 10px;
+}

@@ -1,0 +1,99 @@
+.projectListContainer{
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.projectList{
+    margin-left: -10px;
+    margin-right: -10px;
+    background-color: rgb(251, 251, 251);
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.75); 
+    box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.75);
+    border-radius: 5px;
+    z-index: 980;
+    margin-top: -10px;
+}
+
+.projectListBanner{
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.75); 
+    box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.75);
+    padding: 20px;
+    z-index: 990;
+    color: rgb(233, 233, 233);
+    font-weight: 600;
+    font-size: 26px;
+    background-color: #ffa81c;
+    border-radius: 5px;
+}
+
+.projectListDescription{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    font-size: 22px;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+.projectAddButton{
+    width: 270px;
+    border: none;
+    padding: 5px;
+    background-color: #2da1ff;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 16px;
+    color: #555;
+}
+
+.actionCell{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.projectAddButton:hover{
+    background-color: #a8d8ff;
+}
+
+.projectListEdit{
+    margin-left: -15px;
+    margin-top: 15px;
+    padding: 20px;
+    color: #2da1ff;
+    cursor: pointer;
+}
+
+.projectListEdit:hover{
+    color: #a8d8ff;
+}
+
+.projectListDelete{
+    margin-left: -15px;
+    margin-top: 15px;
+    padding: 20px;
+    color: red;
+    cursor: pointer;
+}
+
+.projectListDelete:hover{
+    color: rgb(255, 108, 54);
+}
+
+.searchBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 20px 20px 0px 20px;
+}
+
+.tableTitle{
+    color: rgb(143, 143, 143);
+    font-weight: 600;
+    font-size: 26px;
+}

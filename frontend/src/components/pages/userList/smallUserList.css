@@ -1,0 +1,29 @@
+.smallUserList{
+    margin-top: 20px;
+    background-color: rgb(251, 251, 251);
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.75); 
+    box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.75);
+    border-radius: 5px;
+}
+
+.addUserIcon{
+    margin-left: 15px;
+    padding: 20px;
+    color: #2da1ff;
+    cursor: pointer;
+}
+
+.addUserIcon:hover{
+    color: #a8d8ff;
+}
+
+.deleteUserIcon{
+    margin-left: 15px;
+    padding: 20px;
+    color: red;
+    cursor: pointer;
+}
+
+.deleteUserIcon:hover{
+    color: coral;
+}

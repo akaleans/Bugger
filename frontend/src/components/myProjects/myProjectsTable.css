@@ -1,0 +1,11 @@
+.myProjectsTableBox{
+    background-color: rgb(251, 251, 251);
+    z-index: 980;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.75); 
+    box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.75);
+    border-radius: 5px;
+    height: calc(100vh - 50px);
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -10px;
+}
