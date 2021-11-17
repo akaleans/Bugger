@@ -214,6 +214,8 @@ export default function Ticket() {
                                         <option value="">Select a Status</option>
                                         <option value="Open">Open</option>
                                         <option value="Closed">Closed</option>
+                                        <option value="Resolved">Resolved</option>
+                                        <option value="On Hold">On Hold</option>
                                     </select>
                                 </div>
                                 <div className="userUpdateItem">

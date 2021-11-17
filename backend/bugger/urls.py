@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import AddUserToProject, CreateComment, CreateProject, CreateTicket, CreateUser, DeleteProject, DeleteUser, GetProject, GetProjects, GetTicket, GetTicketAttachments, GetTicketComments, GetTickets, GetUser, GetUserProjects, GetUsers, RemoveUserFromProject, UpdateProject, UpdateTicket, UpdateUser
+from .views import AddUserToProject, CreateComment, CreateProject, CreateTicket, CreateUser, DeleteProject, DeleteTicket, DeleteUser, GetProject, GetProjects, GetTicket, GetTicketAttachments, GetTicketComments, GetTickets, GetUser, GetUserProjects, GetUsers, RemoveUserFromProject, UpdateProject, UpdateTicket, UpdateUser
 
 urlpatterns = [
     path('get-projects', GetProjects.as_view()),
@@ -23,6 +23,7 @@ urlpatterns = [
     path('get-ticket-attachments/<id>', GetTicketAttachments.as_view()),
     path('update-ticket/<id>', UpdateTicket.as_view()),
     path('create-ticket', CreateTicket.as_view()),
+    path('delete-ticket/<id>', DeleteTicket.as_view()),
     
     path('create-comment', CreateComment.as_view()),
 ]

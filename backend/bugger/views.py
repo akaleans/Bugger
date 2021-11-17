@@ -173,6 +173,18 @@ class DeleteUser(APIView):
             return Response({'message': 'User ID not in database'}, status=status.HTTP_404_NOT_FOUND)
         return Response({'message': 'No ID in request'}, status=status.HTTP_400_BAD_REQUEST)
     
+class DeleteTicket(APIView):
+
+    def delete(self, request, id, format=None):
+        id = id
+        if id != None:
+            obj = Ticket.objects.get(id=id)
+            if obj != None:
+                obj.delete()
+                return Response({'message': 'Delete was successful'}, status=status.HTTP_202_ACCEPTED)
+            return Response({'message': 'User ID not in database'}, status=status.HTTP_404_NOT_FOUND)
+        return Response({'message': 'No ID in request'}, status=status.HTTP_400_BAD_REQUEST)
+    
 class DeleteProject(APIView):
 
     def delete(self, request, id, format=None):
