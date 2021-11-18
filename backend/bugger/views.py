@@ -132,6 +132,16 @@ class GetUserProjects(APIView):
             return Response({'Projects Not Found': 'No Projects Assigned to User'}, status=status.HTTP_404_NOT_FOUND)
         return Response({'Bad Request': 'ID Not Found in Request'}, status=status.HTTP_400_BAD_REQUEST)
     
+class GetUserTickets(APIView):
+
+    def get(self, request, id, format=None):
+        if id != None:
+            data = TicketSerializer(Ticket.objects.filter(assigned_to__id=id), many=True).data
+            if len(data) > 0:
+                return Response(data, status=status.HTTP_200_OK)
+            return Response({'Projects Not Found': 'No Projects Assigned to User'}, status=status.HTTP_404_NOT_FOUND)
+        return Response({'Bad Request': 'ID Not Found in Request'}, status=status.HTTP_400_BAD_REQUEST)
+    
 class GetTicketComments(APIView):
 
     def get(self, request, id, format=None):

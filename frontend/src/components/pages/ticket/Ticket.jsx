@@ -279,12 +279,12 @@ export default function Ticket() {
                         </div>
                     </div>
                 </div>
-                <div className="attachmentList">
+                {/* <div className="attachmentList">
                     <h3 className="userDisplayTitle">
                         Attachments
                     </h3>
                     {(dataLoaded && attachmentsExist()) ? <TicketAttachmentList ticketData={ticketData} updatedUsers={updatedTicketData} /> : null}
-                </div>
+                </div> */}
             </div>
         </div>
     )
